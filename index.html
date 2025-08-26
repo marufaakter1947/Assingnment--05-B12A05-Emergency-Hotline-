@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency Hotline</title>
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css">
+    <!-- google font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Daisyui and tailwind cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+
+    <header>
+        <nav class="px-[60px] py-[24px] shadow-[0px_1px_50px_0px_#b5b5b540] bg-white flex justify-between">
+            <div class="flex items-center gap-[10px]">
+                <img class="w-[50px] h-[50px]" src="./assets/logo.png" alt="Logo of navbar">
+                <h1 class=" font font-bold text-[#006747] text-xl">Emergency <br> Service</h1>
+            </div>
+            <div class="flex items-center gap-[20px]">
+                <div class="heart flex items-center gap-[10px] px-[36px] py-[12px] rounded-[50px] bg-[#41ff6b1a]">
+                    <span class="font-black text-[16px]">0</span>
+                    <img class="w-[30px] h-[30px]" src="./assets/heart.png" alt="icon of heart">
+                </div>
+                <div class="coin flex items-center gap-[10px] px-[36px] py-[12px] rounded-[50px] bg-[#41ff6b1a]">
+                     <span class="font-black text-[16px]">100</span>
+                    <img class="h-[24px] w-[24px]" src="./assets/coin.png" alt="icon of coin">
+                </div>
+                <div class="copy flex items-center gap-[10px] font-semibold text-white bg-[#00A63E] px-[36px] py-[12px] rounded-[50px]">
+                    <span>2</span>
+                    <p>Copy</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
 
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
