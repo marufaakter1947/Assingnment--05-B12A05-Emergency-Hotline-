@@ -1,5 +1,7 @@
 // heart icon functionality
 let totalHeart=0;
+let totalCopy=0;
+let reduceCoins=20;
 const historyData=[];
 const totalClickHeart=document.getElementById("total-heart-count");
 const iconBtns=document.querySelectorAll(".heart-icon");
@@ -10,21 +12,38 @@ for(let iconBtn of iconBtns){
         totalClickHeart.innerText=totalHeart;
     })
 }
+// click Copy number update
+const totalClickCopy=document.getElementById("total-copy-count");
+const copyBtns=document.querySelectorAll(".copy-btn");
 
-// function to set inner text
+for(let copyBtn of copyBtns){
+    copyBtn.addEventListener("click",function(){
+        totalCopy++;
+        totalClickCopy.innerText=totalCopy;
+    })
+}
+
+// functions to get innerText
+
+function getInnerText(id) {
+  const getText = document.getElementById(id).innerText;
+  return getText;
+}
+// Function to set innerText
 function setInnerText(value) {
   const availableCoinsElement = document.getElementById("available-coins");
   availableCoinsElement.innerText = value;
 }
 
-// call button functionality
-let reduceCoins=20;
+//National call button functionality
+
 document.getElementById("national-call").addEventListener("click",function(){
-   const serviceName= document.getElementById("national-title").innerText;
-   const serviceNumber=document.getElementById("national-number").innerText;
+//    const serviceName= document.getElementById("national-title").innerText;
+   const serviceName= getInnerText("national-title");
+   const serviceNumber=getInnerText("national-number");
    const alertMessage= "📞 calling"+ " " + serviceName + " " + serviceNumber +"...";
    alert(alertMessage);
-   const availableCoins=document.getElementById("available-coins").innerText;
+   const availableCoins=getInnerText("available-coins");
    if(availableCoins<reduceCoins){
 alert("You don't have sufficient coins");
 return;
@@ -39,8 +58,6 @@ return;
       Date: new Date().toLocaleTimeString(),
     };
     historyData.push(data);
-
-//    Add call history
 
 const callHistory=document.getElementById("history-container");
 callHistory.innerText="";
@@ -61,3 +78,44 @@ callHistory.appendChild(div);
 }
 
 });
+
+
+// function for copy hotline Number
+function getHotlineNumber(id){
+    const getNumber=getInnerText(id).trim();
+     navigator.clipboard.writeText(getNumber).then(function(){
+    alert("Copied: "+ getNumber);
+   });
+   return getNumber;
+}
+
+document.getElementById("national-copy").addEventListener("click",function(){
+getHotlineNumber("national-number");
+    });
+
+    document.getElementById("police-copy").addEventListener("click",function(){
+getHotlineNumber("police-number");
+    });
+
+      document.getElementById("fire-copy").addEventListener("click",function(){
+getHotlineNumber("fire-number");
+    });
+
+      document.getElementById("ambulance-copy").addEventListener("click",function(){
+getHotlineNumber("ambulance-number");
+    });
+      document.getElementById("w-c-help-copy").addEventListener("click",function(){
+getHotlineNumber("w-c-help-number");
+    });
+      document.getElementById("anti-cr-copy").addEventListener("click",function(){
+getHotlineNumber("anti-cr-number");
+    });
+      document.getElementById("electricity-copy").addEventListener("click",function(){
+getHotlineNumber("electricity-number");
+    });
+      document.getElementById("brac-copy").addEventListener("click",function(){
+getHotlineNumber("brac-number");
+    });
+      document.getElementById("railway-copy").addEventListener("click",function(){
+getHotlineNumber("railway-number");
+    });

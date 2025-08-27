@@ -43,7 +43,7 @@
                     <img class="h-[24px] w-[24px]" src="./assets/coin.png" alt="icon of coin">
                 </div>
                 <div class="copy flex justify-center items-center gap-[10px] font-semibold text-white bg-[#00A63E] px-[36px] py-[12px] rounded-[50px] mb-2">
-                    <span>2</span>
+                    <span id="total-copy-count">0</span>
                     <p>Copy</p>
                 </div>
             </div>
@@ -82,7 +82,7 @@
         </div>
 
         <div class="flex gap-2 ">
-          <button class="px-[16px] py-[10px] rounded-lg border border-[#d4d6d5] text-[#5c5c5c] text-[16px] block w-full"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
+          <button id="national-copy" class=" copy-btn px-[16px] py-[10px] rounded-lg border border-[#d4d6d5] text-[#5c5c5c] text-[16px] block w-full cursor-pointer"><i class="fa-regular fa-copy mr-1 "></i>Copy</button>
           <button id="national-call" class="px-[16px] py-[10px] rounded-lg bg-[#00a63e] text-[16px] text-white block w-full cursor-pointer "><i class="fa-solid fa-phone"></i> Call</button>
           
         </div>
@@ -103,14 +103,14 @@
           <p class="text-[16px] text-gray-700">Police</p>
         </div>
         <div class="mb-[24px]">
-          <h1 class="text-[28px] font-bold">999</h1>
+          <h1 id="police-number" class="text-[28px] font-bold">999</h1>
           <div class="bg-[#F2F2F2] rounded-[9999px]  inline-block ">
             <p class="px-[16px] py-[6px] text-[18px] font text-[#5C5C5C]">Police</p>
           </div>
         </div>
 
         <div class="flex gap-2 ">
-          <button class="px-[16px] py-[10px] rounded-lg border border-[#d4d6d5] text-[#5c5c5c] text-[16px] block w-full"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
+          <button id="police-copy" class="cursor-pointer copy-btn px-[16px] py-[10px] rounded-lg border border-[#d4d6d5] text-[#5c5c5c] text-[16px] block w-full"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
           <button class="px-[16px] py-[10px] rounded-lg bg-[#00a63e] text-[16px] text-white block w-full "><i class="fa-solid fa-phone"></i> Call</button>
         </div>
 
@@ -130,14 +130,14 @@
           <p class="text-[16px] text-gray-700">Fire Service</p>
         </div>
         <div class="mb-[24px]">
-          <h1 class="text-[28px] font-bold">999</h1>
+          <h1 id="fire-number" class="text-[28px] font-bold">999</h1>
           <div class="bg-[#F2F2F2] rounded-[9999px]  inline-block ">
             <p class="px-[16px] py-[6px] text-[18px] font text-[#5C5C5C]">Fire</p>
           </div>
         </div>
 
         <div class="flex gap-2 ">
-          <button class="px-[16px] py-[10px] rounded-lg border border-[#d4d6d5] text-[#5c5c5c] text-[16px] block w-full"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
+          <button id="fire-copy" class="cursor-pointer copy-btn px-[16px] py-[10px] rounded-lg border border-[#d4d6d5] text-[#5c5c5c] text-[16px] block w-full"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
           <button class="px-[16px] py-[10px] rounded-lg bg-[#00a63e] text-[16px] text-white block w-full "><i class="fa-solid fa-phone"></i> Call</button>
         </div>
 
@@ -157,14 +157,14 @@
           <p class="text-[16px] text-gray-700">Ambulance</p>
         </div>
         <div class="mb-[24px]">
-          <h1 class="text-[28px] font-bold">1994-999999</h1>
+          <h1 id="ambulance-number" class="text-[28px] font-bold">1994-999999</h1>
           <div class="bg-[#F2F2F2] rounded-[9999px]  inline-block ">
             <p class="px-[16px] py-[6px] text-[18px] font text-[#5C5C5C]">Health</p>
           </div>
         </div>
 
         <div class="flex gap-2 ">
-          <button class="px-[16px] py-[10px] rounded-lg border border-[#d4d6d5] text-[#5c5c5c] text-[16px] block w-full"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
+          <button id="ambulance-copy" class="cursor-pointer copy-btn px-[16px] py-[10px] rounded-lg border border-[#d4d6d5] text-[#5c5c5c] text-[16px] block w-full"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
           <button class="px-[16px] py-[10px] rounded-lg bg-[#00a63e] text-[16px] text-white block w-full "><i class="fa-solid fa-phone"></i> Call</button>
         </div>
 
@@ -184,14 +184,14 @@
           <p class="text-[16px] text-gray-700">Women & Child Helpline</p>
         </div>
         <div class="mb-[24px]">
-          <h1 class="text-[28px] font-bold">109</h1>
+          <h1 id="w-c-help-number" class="text-[28px] font-bold">109</h1>
           <div class="bg-[#F2F2F2] rounded-[9999px]  inline-block ">
             <p class="px-[16px] py-[6px] text-[18px] font text-[#5C5C5C]">Help</p>
           </div>
         </div>
 
         <div class="flex gap-2 ">
-          <button class="px-[16px] py-[10px] rounded-lg border border-[#d4d6d5] text-[#5c5c5c] text-[16px] block w-full"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
+          <button id="w-c-help-copy" class="cursor-pointer copy-btn px-[16px] py-[10px] rounded-lg border border-[#d4d6d5] text-[#5c5c5c] text-[16px] block w-full"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
           <button class="px-[16px] py-[10px] rounded-lg bg-[#00a63e] text-[16px] text-white block w-full "><i class="fa-solid fa-phone"></i> Call</button>
         </div>
 
@@ -210,14 +210,14 @@
           <p class="text-[16px] text-gray-700">Anti-Corruption</p>
         </div>
         <div class="mb-[24px]">
-          <h1 class="text-[28px] font-bold">106</h1>
+          <h1 id="anti-cr-number" class="text-[28px] font-bold">106</h1>
           <div class="bg-[#F2F2F2] rounded-[9999px]  inline-block ">
             <p class="px-[16px] py-[6px] text-[18px] font text-[#5C5C5C]">Govt.</p>
           </div>
         </div>
 
         <div class="flex gap-2 ">
-          <button class="px-[16px] py-[10px] rounded-lg border border-[#d4d6d5] text-[#5c5c5c] text-[16px] block w-full"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
+          <button id="anti-cr-copy" class="cursor-pointer copy-btn px-[16px] py-[10px] rounded-lg border border-[#d4d6d5] text-[#5c5c5c] text-[16px] block w-full"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
           <button class="px-[16px] py-[10px] rounded-lg bg-[#00a63e] text-[16px] text-white block w-full "><i class="fa-solid fa-phone"></i> Call</button>
         </div>
 
@@ -236,14 +236,14 @@
           <p class="text-[16px] text-gray-700">Electricity Outage</p>
         </div>
         <div class="mb-[24px]">
-          <h1 class="text-[28px] font-bold">16216</h1>
+          <h1 id="electricity-number" class="text-[28px] font-bold">16216</h1>
           <div class="bg-[#F2F2F2] rounded-[9999px]  inline-block ">
             <p class="px-[16px] py-[6px] text-[18px] font text-[#5C5C5C]">Electricity</p>
           </div>
         </div>
 
         <div class="flex gap-2 ">
-          <button class="px-[16px] py-[10px] rounded-lg border border-[#d4d6d5] text-[#5c5c5c] text-[16px] block w-full"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
+          <button id="electricity-copy" class="cursor-pointer copy-btn px-[16px] py-[10px] rounded-lg border border-[#d4d6d5] text-[#5c5c5c] text-[16px] block w-full"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
           <button class="px-[16px] py-[10px] rounded-lg bg-[#00a63e] text-[16px] text-white block w-full "><i class="fa-solid fa-phone"></i> Call</button>
         </div>
 
@@ -253,7 +253,7 @@
  <div class="bg-white shadow-[0px_2px_3px_0px_#00000026] p-[32px] rounded-[12px]">
         <div class="flex justify-between items-center mb-[16px]">
            <div class="w-[60px] h-[60px] rounded-[16px] bg-[#FFE3E2] flex justify-center items-center">
-             <img class="w-[32px] h-[32px]" src="./assets/emergency.png" alt="Emergency logo">
+             <img class="w-[32px] h-[32px]" src="./assets/brac.png" alt="Emergency logo">
            </div>
             <i  class="fa-regular fa-heart heart-icon cursor-pointer"></i>
         </div>
@@ -262,14 +262,14 @@
           <p class="text-[16px] text-gray-700">Brac</p>
         </div>
         <div class="mb-[24px]">
-          <h1 class="text-[28px] font-bold">16445</h1>
+          <h1 id="brac-number" class="text-[28px] font-bold">16445</h1>
           <div class="bg-[#F2F2F2] rounded-[9999px]  inline-block ">
             <p class="px-[16px] py-[6px] text-[18px] font text-[#5C5C5C]">NGO</p>
           </div>
         </div>
 
         <div class="flex gap-2 ">
-          <button class="px-[16px] py-[10px] rounded-lg border border-[#d4d6d5] text-[#5c5c5c] text-[16px] block w-full"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
+          <button id="brac-copy" class="cursor-pointer copy-btn px-[16px] py-[10px] rounded-lg border border-[#d4d6d5] text-[#5c5c5c] text-[16px] block w-full"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
           <button class="px-[16px] py-[10px] rounded-lg bg-[#00a63e] text-[16px] text-white block w-full "><i class="fa-solid fa-phone"></i> Call</button>
         </div>
 
@@ -280,7 +280,7 @@
  <div class="bg-white shadow-[0px_2px_3px_0px_#00000026] p-[32px] rounded-[12px]">
         <div class="flex justify-between items-center mb-[16px]">
            <div class="w-[60px] h-[60px] rounded-[16px] bg-[#FFE3E2] flex justify-center items-center">
-             <img class="w-[32px] h-[32px]" src="./assets/emergency.png" alt="Emergency logo">
+             <img class="w-[32px] h-[32px]" src="./assets/Bangladesh-Railway.png" alt="Emergency logo">
            </div>
             <i  class="fa-regular fa-heart heart-icon cursor-pointer"></i>
         </div>
@@ -289,14 +289,14 @@
           <p class="text-[16px] text-gray-700">Bangladesh Railway</p>
         </div>
         <div class="mb-[24px]">
-          <h1 class="text-[28px] font-bold">163</h1>
+          <h1 id="railway-number" class="text-[28px] font-bold">163</h1>
           <div class="bg-[#F2F2F2] rounded-[9999px]  inline-block ">
             <p class="px-[16px] py-[6px] text-[18px] font text-[#5C5C5C]">Travel</p>
           </div>
         </div>
 
         <div class="flex gap-2 ">
-          <button class="px-[16px] py-[10px] rounded-lg border border-[#d4d6d5] text-[#5c5c5c] text-[16px] block w-full"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
+          <button id="railway-copy" class="cursor-pointer copy-btn px-[16px] py-[10px] rounded-lg border border-[#d4d6d5] text-[#5c5c5c] text-[16px] block w-full"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
           <button class="px-[16px] py-[10px] rounded-lg bg-[#00a63e] text-[16px] text-white block w-full "><i class="fa-solid fa-phone"></i> Call</button>
         </div>
 
