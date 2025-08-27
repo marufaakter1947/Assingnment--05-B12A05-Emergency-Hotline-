@@ -2,7 +2,7 @@
 let totalHeart=0;
 let totalCopy=0;
 let reduceCoins=20;
-const historyData=[];
+let historyData=[];
 const totalClickHeart=document.getElementById("total-heart-count");
 const iconBtns=document.querySelectorAll(".heart-icon");
 
@@ -39,7 +39,7 @@ function setInnerText(value) {
 // Call History Added function
 function addedHistory(){
 const callHistory=document.getElementById("history-container");
-callHistory.innerText="";
+callHistory.innerHTML="";
 for(const data of historyData){
      const div = document.createElement("div");
      div.innerHTML=`
@@ -329,4 +329,12 @@ getHotlineNumber("brac-number");
     });
       document.getElementById("railway-copy").addEventListener("click",function(){
 getHotlineNumber("railway-number");
+    });
+
+
+    // Clear button functionality
+
+    document.getElementById("clear-history-btn").addEventListener("click",function(){
+        document.getElementById("history-container").innerHTML="";
+        historyData =[];
     });
