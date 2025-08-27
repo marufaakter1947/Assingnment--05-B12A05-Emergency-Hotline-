@@ -12,15 +12,24 @@ for (let iconBtn of iconBtns) {
     totalClickHeart.innerText = totalHeart;
   });
 }
-// click Copy number update
-const totalClickCopy = document.getElementById("total-copy-count");
-const copyBtns = document.querySelectorAll(".copy-btn");
 
-for (let copyBtn of copyBtns) {
-  copyBtn.addEventListener("click", function () {
-    totalCopy++;
-    totalClickCopy.innerText = totalCopy;
-  });
+// function for copy hotline Number and update copy count
+const totalClickCopy = document.getElementById("total-copy-count");
+function getHotlineNumber(id) {
+  const getNumber = getInnerText(id).trim();
+
+  navigator.clipboard
+    .writeText(getNumber)
+    .then(function () {
+      alert("Copied: " + getNumber);
+      totalCopy++;
+      totalClickCopy.innerText = totalCopy;
+    })
+
+    .catch(function (err) {
+      alert("Failed to copy the number");
+    });
+  return getNumber;
 }
 
 // functions to get innerText
@@ -300,21 +309,6 @@ document
     historyData.push(data);
     addedHistory();
   });
-
-// function for copy hotline Number
-function getHotlineNumber(id) {
-  const getNumber = getInnerText(id).trim();
-  navigator.clipboard
-    .writeText(getNumber)
-    .then(function () {
-      alert("Copied: " + getNumber);
-    })
-
-    .catch(function (err) {
-      alert("Failed to copy the number");
-    });
-  return getNumber;
-}
 
 document.getElementById("national-copy").addEventListener("click", function () {
   getHotlineNumber("national-number");
