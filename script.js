@@ -35,30 +35,9 @@ function setInnerText(value) {
   availableCoinsElement.innerText = value;
 }
 
-//National call button functionality
 
-document.getElementById("national-call").addEventListener("click",function(){
-//    const serviceName= document.getElementById("national-title").innerText;
-   const serviceName= getInnerText("national-title");
-   const serviceNumber=getInnerText("national-number");
-   const alertMessage= "📞 calling"+ " " + serviceName + " " + serviceNumber +"...";
-   alert(alertMessage);
-   const availableCoins=getInnerText("available-coins");
-   if(availableCoins<reduceCoins){
-alert("You don't have sufficient coins");
-return;
-   }
-   const currentCoins=Number(availableCoins)- Number(reduceCoins);
-
-   setInnerText(currentCoins);
-
-   const data = {
-      name: "National Emergency Number",
-      number: 999,
-      Date: new Date().toLocaleTimeString(),
-    };
-    historyData.push(data);
-
+// Call History Added function
+function addedHistory(){
 const callHistory=document.getElementById("history-container");
 callHistory.innerText="";
 for(const data of historyData){
@@ -76,9 +55,241 @@ for(const data of historyData){
      `;
 callHistory.appendChild(div);
 }
+}
+//National call button functionality
+
+
+document.getElementById("national-call").addEventListener("click",function(){
+   const serviceName= getInnerText("national-title");
+   const serviceNumber=getInnerText("national-number");
+   const alertMessage= "📞 calling"+ " " + serviceName + " " + serviceNumber +"...";
+   alert(alertMessage);
+   const availableCoins=getInnerText("available-coins");
+   if(availableCoins<reduceCoins){
+alert("You don't have sufficient coins");
+return;
+   }
+   const currentCoins=Number(availableCoins)- Number(reduceCoins);
+
+   setInnerText(currentCoins);
+
+   const data = {
+      name: serviceName,
+      number: serviceNumber,
+      Date: new Date().toLocaleTimeString(),
+    };
+    historyData.push(data);
+
+addedHistory();
 
 });
+// Police helpline functionality
+document.getElementById("police-call-btn").addEventListener("click",function(){
+ const serviceName= getInnerText("police-title");
+ console.log(serviceName);
+   const serviceNumber=getInnerText("police-number");
+   const alertMessage= "📞 calling"+ " " + serviceName + " " + serviceNumber +"...";
+   alert(alertMessage);
+   const availableCoins=getInnerText("available-coins");
+   if(availableCoins<reduceCoins){
+alert("You don't have sufficient coins");
+return;
+   }
+   const currentCoins=Number(availableCoins)- Number(reduceCoins);
 
+   setInnerText(currentCoins);
+
+   
+   const data = {
+      name: serviceName,
+      number: serviceNumber,
+      Date: new Date().toLocaleTimeString(),
+    };
+    historyData.push(data);
+addedHistory();
+});
+
+// Fire service functionality
+document.getElementById("fire-call-btn").addEventListener("click",function(){
+ const serviceName= getInnerText("fire-title");
+ console.log(serviceName);
+   const serviceNumber=getInnerText("fire-number");
+   const alertMessage= "📞 calling"+ " " + serviceName + " " + serviceNumber +"...";
+   alert(alertMessage);
+   const availableCoins=getInnerText("available-coins");
+   if(availableCoins<reduceCoins){
+alert("You don't have sufficient coins");
+return;
+   }
+   const currentCoins=Number(availableCoins)- Number(reduceCoins);
+
+   setInnerText(currentCoins);
+
+   
+   const data = {
+      name: serviceName,
+      number: serviceNumber,
+      Date: new Date().toLocaleTimeString(),
+    };
+    historyData.push(data);
+addedHistory();
+});
+
+// Ambulance helpline functionality
+document.getElementById("ambulance-call-btn").addEventListener("click",function(){
+ const serviceName= getInnerText("ambulance-title");
+ console.log(serviceName);
+   const serviceNumber=getInnerText("ambulance-number");
+   const alertMessage= "📞 calling"+ " " + serviceName + " " + serviceNumber +"...";
+   alert(alertMessage);
+   const availableCoins=getInnerText("available-coins");
+   if(availableCoins<reduceCoins){
+alert("You don't have sufficient coins");
+return;
+   }
+   const currentCoins=Number(availableCoins)- Number(reduceCoins);
+
+   setInnerText(currentCoins);
+
+   
+  const data = {
+      name: serviceName,
+      number: serviceNumber,
+      Date: new Date().toLocaleTimeString(),
+    };
+    historyData.push(data);
+addedHistory();
+});
+
+// Women and child helpline functionality
+document.getElementById("w-c-help-call-btn").addEventListener("click",function(){
+ const serviceName= getInnerText("w-c-help-title");
+ console.log(serviceName);
+   const serviceNumber=getInnerText("w-c-help-number");
+   const alertMessage= "📞 calling"+ " " + serviceName + " " + serviceNumber +"...";
+   alert(alertMessage);
+   const availableCoins=getInnerText("available-coins");
+   if(availableCoins<reduceCoins){
+alert("You don't have sufficient coins");
+return;
+   }
+   const currentCoins=Number(availableCoins)- Number(reduceCoins);
+
+   setInnerText(currentCoins);
+
+   
+   const data = {
+      name: serviceName,
+      number: serviceNumber,
+      Date: new Date().toLocaleTimeString(),
+    };
+    historyData.push(data);
+addedHistory();
+});
+
+// Anti-corruption helpline functionality
+document.getElementById("anti-cr-call-btn").addEventListener("click",function(){
+ const serviceName= getInnerText("anti-cr-title");
+ console.log(serviceName);
+   const serviceNumber=getInnerText("anti-cr-number");
+   const alertMessage= "📞 calling"+ " " + serviceName + " " + serviceNumber +"...";
+   alert(alertMessage);
+   const availableCoins=getInnerText("available-coins");
+   if(availableCoins<reduceCoins){
+alert("You don't have sufficient coins");
+return;
+   }
+   const currentCoins=Number(availableCoins)- Number(reduceCoins);
+
+   setInnerText(currentCoins);
+
+   
+  const data = {
+      name: serviceName,
+      number: serviceNumber,
+      Date: new Date().toLocaleTimeString(),
+    };
+    historyData.push(data);
+addedHistory();
+});
+
+// Electricity helpline functionality
+document.getElementById("electricity-call-btn").addEventListener("click",function(){
+ const serviceName= getInnerText("electricity-title");
+ console.log(serviceName);
+   const serviceNumber=getInnerText("electricity-number");
+   const alertMessage= "📞 calling"+ " " + serviceName + " " + serviceNumber +"...";
+   alert(alertMessage);
+   const availableCoins=getInnerText("available-coins");
+   if(availableCoins<reduceCoins){
+alert("You don't have sufficient coins");
+return;
+   }
+   const currentCoins=Number(availableCoins)- Number(reduceCoins);
+
+   setInnerText(currentCoins);
+
+   
+   const data = {
+      name: serviceName,
+      number: serviceNumber,
+      Date: new Date().toLocaleTimeString(),
+    };
+    historyData.push(data);
+addedHistory();
+});
+
+// Brac helpline functionality
+document.getElementById("brac-call-btn").addEventListener("click",function(){
+ const serviceName= getInnerText("brac-title");
+ console.log(serviceName);
+   const serviceNumber=getInnerText("brac-number");
+   const alertMessage= "📞 calling"+ " " + serviceName + " " + serviceNumber +"...";
+   alert(alertMessage);
+   const availableCoins=getInnerText("available-coins");
+   if(availableCoins<reduceCoins){
+alert("You don't have sufficient coins");
+return;
+   }
+   const currentCoins=Number(availableCoins)- Number(reduceCoins);
+
+   setInnerText(currentCoins);
+
+   
+   const data = {
+      name: serviceName,
+      number: serviceNumber,
+      Date: new Date().toLocaleTimeString(),
+    };
+    historyData.push(data);
+addedHistory();
+});
+
+// Bangladesh Railway helpline functionality
+document.getElementById("railway-call-btn").addEventListener("click",function(){
+ const serviceName= getInnerText("railway-title");
+ console.log(serviceName);
+   const serviceNumber=getInnerText("railway-number");
+   const alertMessage= "📞 calling"+ " " + serviceName + " " + serviceNumber +"...";
+   alert(alertMessage);
+   const availableCoins=getInnerText("available-coins");
+   if(availableCoins<reduceCoins){
+alert("You don't have sufficient coins");
+return;
+   }
+   const currentCoins=Number(availableCoins)- Number(reduceCoins);
+
+   setInnerText(currentCoins);
+
+   
+   const data = {
+      name: serviceName,
+      number: serviceNumber,
+      Date: new Date().toLocaleTimeString(),
+    };
+    historyData.push(data);
+addedHistory();
+});
 
 // function for copy hotline Number
 function getHotlineNumber(id){
