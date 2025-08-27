@@ -39,7 +39,7 @@
                     <img class="w-[30px] h-[30px]" src="./assets/heart.png" alt="icon of heart">
                 </div>
                 <div class="coin flex justify-center items-center gap-[10px] px-[36px] py-[12px] rounded-[50px] bg-[#41ff6b1a] mb-2">
-                     <span class="font-black text-[16px]">100</span>
+                     <span id="available-coins" class="font-black text-[16px]">100</span>
                     <img class="h-[24px] w-[24px]" src="./assets/coin.png" alt="icon of coin">
                 </div>
                 <div class="copy flex justify-center items-center gap-[10px] font-semibold text-white bg-[#00A63E] px-[36px] py-[12px] rounded-[50px] mb-2">
@@ -71,11 +71,11 @@
             <i   class="fa-regular fa-heart heart-icon cursor-pointer"></i>
         </div>
         <div class="mb-5">
-          <h1 class="font text-[20px] font-bold leading-8">National Emergency Number</h1>
+          <h1 id="national-title" class="font text-[20px] font-bold leading-8">National Emergency Number</h1>
           <p class="text-[16px] text-gray-700">National Emergency</p>
         </div>
         <div class="mb-[24px]">
-          <h1 class="text-[28px] font-bold">999</h1>
+          <h1 id="national-number" class="text-[28px] font-bold">999</h1>
           <div class="bg-[#F2F2F2] rounded-[9999px]  inline-block ">
             <p class="px-[16px] py-[6px] text-[18px] font text-[#5C5C5C]">All</p>
           </div>
@@ -83,7 +83,8 @@
 
         <div class="flex gap-2 ">
           <button class="px-[16px] py-[10px] rounded-lg border border-[#d4d6d5] text-[#5c5c5c] text-[16px] block w-full"><i class="fa-regular fa-copy mr-1"></i>Copy</button>
-          <button class="px-[16px] py-[10px] rounded-lg bg-[#00a63e] text-[16px] text-white block w-full "><i class="fa-solid fa-phone"></i> Call</button>
+          <button id="national-call" class="px-[16px] py-[10px] rounded-lg bg-[#00a63e] text-[16px] text-white block w-full cursor-pointer "><i class="fa-solid fa-phone"></i> Call</button>
+          <div id="alert-container"></div>
         </div>
 
 
